@@ -1,0 +1,25 @@
+{
+  "name": "ea01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist",
+    "dev": "webpack --mode development",
+    "build": "rollup --config --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://lieskpat.github.io/webgl_ea1",
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-run": "^3.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "rollup": "^3.2.3",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
