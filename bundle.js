@@ -59,7 +59,52 @@
     }
 
     //line start and end point
-    const lineVertices = [0, 0, -0.25, 0, 0, 0, 0, 0.25, 0, 0, 0, -0.25];
+    const lineVertices = [  
+    -1, 1,
+    1, -1,
+    -1, 0.9,
+    0.9, -1,
+    -1, 0.8,
+    0.8, -1,
+    -1, 0.7,
+    0.7, -1,
+    0, 0,
+    1, 1,
+    0, 0,
+    0, 1,
+    0, 0.1,
+    0.9, 1,
+    0, 0.2,
+    0.8, 1,
+    0, 0.3,
+    0.7, 1,
+    0.1, 0.4,
+    0.1, 1,
+    0.2, 0.5,
+    0.2, 1,
+    0.3, 0.6,
+    0.3, 1,
+    0.4, 0.7,
+    0.4, 1,
+    0.5, 0.8,
+    0.5, 1,
+    0.6, 0.9,
+    0.6, 1,
+    0, 0,
+    1, 0,
+    -0.3, 0,
+    -1, 0,
+    -0.4, 0.1,
+    -1, 0.1,
+    -0.5, 0.2,
+    -1, 0.2,
+    -0.6, 0.3,
+    -1, 0.3,
+    -0.7, 0.4,
+    -1, 0.4
+
+
+    ];
 
     function loadVertexData() {
         return new Float32Array(lineVertices);
@@ -116,7 +161,7 @@
         initBuffer(gl);
         gl.clearColor(0, 0, 0, 1);
         gl.clear(gl.COLOR_BUFFER_BIT);
-        gl.drawArrays(gl.LINES, 0, 6);
+        gl.drawArrays(gl.LINES, 0, 42);
     }
 
     render(gl);
