@@ -25,7 +25,7 @@ function buildLsystem(loopCount) {
 }
 
 const translation = {
-    trans: [0.25, 0, 0, 1],
+    trans: [0.25, 0],
 };
 
 const rotation = {
